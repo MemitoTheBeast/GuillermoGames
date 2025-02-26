@@ -1,16 +1,77 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
     background-color: #ffebcd;
+    border-bottom: 5px solid #d2691e;
 }
 
 h1 {
+    font-size: 3em;
     color: #d2691e;
+    margin: 0;
 }
 
-a {
-    display: block;
-    margin-top: 20px;
-    color: #d2691e;
+p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Game List */
+.game-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.game-list li {
+    margin: 20px 0;
+}
+
+/* Style for Game Titles */
+.game-title {
+    font-size: 2.5em;
     font-weight: bold;
+    color: #ff6347; /* Tomato color */
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #d2691e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.game-title:hover {
+    color: #fff;
+    background-color: #8b4513; /* Darker brown */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.game-title:active {
+    transform: translateY(2px); /* Slight down effect when clicked */
+}
+
+/* Add a subtle background gradient to the page */
+body {
+    background: linear-gradient(to bottom, #ffebcd, #fff);
+}
+
+/* Make the titles responsive on smaller screens */
+@media (max-width: 768px) {
+    .game-title {
+        font-size: 2em;
+        padding: 15px;
+    }
 }
